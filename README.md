@@ -6,7 +6,7 @@ Dermatology imaging datasets used to train AI diagnostic tools often underrepres
 
 This project builds a 3-class skin lesion classifier (non-neoplastic / benign / malignant) and asks a harder question than “what's the accuracy?”: does this specific model show a measurable performance disparity across Fitzpatrick skin-tone bands, how robust is that disparity statistically, can it be reduced with standard mitigation techniques, and if not, what factors might explain it?
 
-The goal was not to produce a clean “I fixed bias” result, but a rigorous, honestly reported audit — including negative results, reproducibility failures, and an investigation into why mitigation attempts did or did not work, rather than treating the model as a black box.
+
 ---
 
 ## Part 1: Sourcing the Dataset
