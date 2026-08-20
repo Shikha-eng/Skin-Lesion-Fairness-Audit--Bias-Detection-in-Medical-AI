@@ -2,22 +2,11 @@
 
 ## Problem Statement
 
-Dermatology imaging datasets used to train AI diagnostic tools are overwhelmingly composed of
-light-skinned patients. Models trained on this data are documented in clinical literature to
-underperform on darker skin tones — a real, unsolved equity problem in medical AI, with direct
-clinical stakes: melanoma is already diagnosed later and less accurately in patients with darker
-skin, and an AI screening tool that inherits or amplifies this gap could worsen existing health
-disparities rather than reduce clinician workload safely.
+Dermatology imaging datasets used to train AI diagnostic tools often underrepresent darker skin tones. Models trained on such datasets have been documented to show lower performance on darker skin tones — a persistent equity challenge in medical AI with potential clinical consequences. Melanoma in patients with darker skin is also associated with later-stage diagnosis and poorer outcomes, raising concerns that an AI screening tool could reproduce or amplify existing disparities rather than safely reducing diagnostic burden.
 
-This project builds a 3-class skin lesion classifier (non-neoplastic / benign / malignant) and
-asks a harder question than "what's the accuracy": **does this specific model show a measurable
-performance disparity across Fitzpatrick skin tone bands, is that disparity statistically real,
-can it be fixed with standard mitigation techniques, and if not, what is actually causing it?**
+This project builds a 3-class skin lesion classifier (non-neoplastic / benign / malignant) and asks a harder question than “what's the accuracy?”: does this specific model show a measurable performance disparity across Fitzpatrick skin-tone bands, how robust is that disparity statistically, can it be reduced with standard mitigation techniques, and if not, what factors might explain it?
 
-The goal was not to produce a clean "I fixed bias" result, but a rigorous, honestly-reported audit
-— including negative results, reproducibility failures, and a mechanistic explanation for *why*
-mitigation attempts did or didn't work, rather than treating the model as a black box.
-
+The goal was not to produce a clean “I fixed bias” result, but a rigorous, honestly reported audit — including negative results, reproducibility failures, and an investigation into why mitigation attempts did or did not work, rather than treating the model as a black box.
 ---
 
 ## Part 1: Sourcing the Dataset
